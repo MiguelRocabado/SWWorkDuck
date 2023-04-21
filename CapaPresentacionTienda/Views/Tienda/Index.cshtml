@@ -1,0 +1,1221 @@
+﻿
+@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Header-->
+@*<div id="carouselExampleCaptions py-5 px-4 px-lg-5 my-5" class="carousel slide" data-bs-ride="false">*@
+<link rel="stylesheet" href="~/Content/assets/css/slick.css">
+<link rel="stylesheet" href="~/Content/assets/css/slick-theme.css">
+<link rel="stylesheet" href="~/Content/assets/css/animate.css">
+<link rel="stylesheet" href="~/Content/assets/css/fonticons.css">
+<link rel="stylesheet" href="~/Content/assets/css/font-awesome.min.css">
+@*<link rel="stylesheet" href="~/Content/assets/css/bootstrap.css">*@
+<link rel="stylesheet" href="~/Content/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="~/Content/assets/css/bootsnav.css">
+@Styles.Render("~/Content/assets/css")
+<style>
+    /*#cart1:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,9));
+    }
+
+    #cart2:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,9));
+    }
+
+    #cart3:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,9));
+    }*/
+</style>
+@*<header>
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div id="cart1" class="carousel-item active" data-bs-interval="10000">
+                    <img src="~/Images/Ferreteria-1.jpg" height="400" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visítanos</h5>
+                        <p>Visita nuestras sucursales y encuentra más información en nuestras redes sociales.</p>
+                    </div>
+                </div>
+                <div id="cart2" class="carousel-item" data-bs-interval="2000">
+                    <img src="~/Images/Ferretería-2.jpeg" height="400" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tienda online</h5>
+                        <p>Encuentra todo lo que necesites y realiza tus compras desde la comodidad de tu hogar.</p>
+                    </div>
+                </div>
+                <div id="cart3" class="carousel-item">
+                    <img src="~/Images/Ferretería-3.jpg" height="400" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gran variedad de herramientas</h5>
+                        <p>Somos distribuidores oficiales de diversas marcas de maquinaria.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>*@
+@*<header class="masthead d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="text-white mb-1"><strong>Bienvenido a Ferreland</strong></h1>
+            <h3 class="text-white mb-5"><em>Donde todo es fácil de comprar...</em></h3>
+            <a class="text-white btn btn-primary btn-xl" href="#about">Saber más</a>
+        </div>
+    </header>
+    <main>*@
+
+
+<!-- Services-->
+<!--<section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Services</h3>
+            <h2 class="mb-5">What We Offer</h2>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                <h4><strong>Responsive</strong></h4>
+                <p class="text-faded mb-0">Looks great on any screen size!</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                <h4><strong>Redesigned</strong></h4>
+                <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                <h4><strong>Favorited</strong></h4>
+                <p class="text-faded mb-0">
+                    Millions of users
+                    <i class="fas fa-heart"></i>
+                    Start Bootstrap!
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                <h4><strong>Question</strong></h4>
+                <p class="text-faded mb-0">I mustache you a question...</p>
+            </div>
+        </div>
+    </div>
+</section>-->
+@*<hr class="featurette-divider">*@
+<!--Home Sections-->
+<!--<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_four"></div>
+        </div>
+    </div>
+</div>-->@*End off Preloader*@
+<section id="hello" class="home bg-mega">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="main_home">
+                <div class="home_text">
+                    <h1 class="text-white">BIENVENIDO <br /> A FERRELAND!</h1>
+                    <h3 class="text-white mb-5"><em>Donde todo es fácil de comprar...</em></h3>
+                </div>
+
+                <div class="home_btns m-top-40">
+                    <a href="" class="btn btn-primary m-top-20">Saber más</a>
+                </div>
+
+            </div>
+        </div><!--End off row-->
+    </div><!--End off container -->
+</section> <!--End off Home Sections-->
+<!--About Sections-->
+<section id="about" class="about roomy-100">
+    <div class="container">
+        <div class="row">
+            <div class="main_about">
+                <div class="col-md-6">
+                    <div class="about_content">
+                        <h2>ACERCA DE NOSOTROS</h2>
+                        <div class="separator_left"></div>
+
+                        <p>
+                            FERRELAND es una empresa dedicada
+                            a la comercialización y distribución
+                            de materiales para la construcción que
+                            se hacaracterizado por ser una empresa
+                            resaltante en el sector, brindando un trato
+                            cordial y personalizado a su clientela.Contamos
+                            con dos sucursales, estratégicamente ubicadas en
+                            laciudad de La Paz,la casa matriz está ubicada en la
+                            calle Isaac Tamayo #911.Contamos con un stock con más
+                            de 5.000 ítems de las mejores marcas del Mercado
+                            a  un  precio  accesible.
+                        </p>
+
+                        <div class="about_btns m-top-40">
+                            <a href="" class="btn btn-primary">VISITA NUESTRO FACEBOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-circle about-heading-img mb-3 mb-lg-0" width="355" height="355" src="~/Content/assets/images/ferreland_puerto_AN.jpg" alt="..." />
+                </div>
+            </div>
+        </div><!--End off row-->
+    </div><!--End off container -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="about_bottom_content text-center">
+                <h2>NOS CARACTERIZAMOS POR</h2>
+                <div class="separator_auto"></div>
+                <div class="col-md-4">
+                    <div class="about_bottom_item m-top-20">
+                        <div class="ab_head">
+                            <div class="ab_head_icon">
+                                @*<i class="icofont icofont-fire-burn"></i>*@
+                            </div>
+                            <h6 class="m-top-20"> CALIDAD</h6>
+                        </div>
+                        <p class="m-top-20">
+                            Ofrecemos productos de la más alta calidad y de las mejores marcas en el mercado. ¡Conócenos!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about_bottom_item m-top-20">
+                        <div class="ab_head">
+                            <div class="ab_head_icon">
+                                @*<i class="icofont icofont-speech-comments"></i>*@
+                            </div>
+                            <h6 class="m-top-20">PRECIO</h6>
+                        </div>
+                        <p class="m-top-20">
+                            Contamos con productos de todo precio, accesibles y con mucha calidad.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about_bottom_item m-top-20">
+                        <div class="ab_head">
+                            <div class="ab_head_icon">
+                                @*<i class="icofont icofont-heart"></i>*@
+                            </div>
+                            <h6 class="m-top-20">EXPERIENCIA</h6>
+                        </div>
+                        <p class="m-top-20">Tenemos amplia experiencia y trayectoria, somos profesionales en lo que hacemos.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--End off row-->
+    </div><!--End off container -->
+</section> <!--End off About section -->
+<!--Video section-->
+<!-- <section id="video" class="video">
+    <div class="overlay"></div>
+    <div class="main_video roomy-100 m-top-100 m-bottom-100 text-center">
+        <div class="video_text text-center">
+            <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-link"><span class="fa fa-play"></span></a>
+        </div>
+    </div>
+</section>End off video section -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="main_featured m-top-100">
+            <div class="col-sm-12">
+                <div class="head_title text-center">
+                    <h2>FEATURED WORK</h2>
+                    <div class="separator_auto"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod nostrud exerci tation ullamcorper
+                        suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured_slider">
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/1.jpg" alt="" />
+            <a href="assets/images/fprojects/1.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/2.jpg" alt="" />
+            <a href="assets/images/fprojects/2.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/3.jpg" alt="" />
+            <a href="assets/images/fprojects/3.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/4.jpg" alt="" />
+            <a href="assets/images/fprojects/4.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/5.jpg" alt="" />
+            <a href="assets/images/fprojects/5.jpg" class="popup-img"></a>
+        </div>
+    </div>
+</div>End off featured slider -->
+<!--Service Section-->
+<section id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="main_service roomy-100">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="head_title text-center">
+                        <h2>NUESTROS SERVCIOS</h2>
+                        <div class="separator_auto"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service_item">
+                        @*<i class="icofont icofont-light-bulb"></i>*@
+                        <h6 class="m-top-30">VENTA</h6>
+                        <div class="separator_small"></div>
+                        <p>
+                            Vendemos materiales de construcción, herramientas eléctricas y manuales, artículos para plomería, electricidad, pintura, carpintería y otros productos relacionados con la construcción y el hogar.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service_item">
+                        @*<i class="icofont icofont-imac"></i>*@
+                        <h6 class="m-top-30">ASESORÍA</h6>
+                        <div class="separator_small"></div>
+                        <p>
+                            Ofrecemos asesoría técnica a los clientes para ayudarles a seleccionar los productos más adecuados para sus necesidades y proyectos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div><!--End off row -->
+    </div><!--End off container -->
+</section> <!--End off Featured section-->
+<!--Skill Sections-->
+<!-- <section id="skill" class="skill roomy-100">
+    <div class="container">
+        <div class="row">
+            <div class="main_skill">
+                <div class="col-md-6">
+                    <div class="skill_content wow fadeIn">
+                        <h2>Our skill</h2>
+                        <div class="separator_left"></div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                            quis nostrud exerci tation ullamcorper suscipit lobortis
+                            nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+                            sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip
+                            ex ea commodo consequat. </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill_bar sm-m-top-50">
+                        <div class="teamskillbar clearfix m-top-20" data-percent="80%">
+                            <h6>GRAPHIC DESIGN</h6>
+                            <div class="teamskillbar-bar"></div>
+                        </div> <!- End Skill Bar
+
+                        <div class="teamskillbar clearfix m-top-50" data-percent="75%">
+                            <h6>TYPOGRAPHY</h6>
+                            <div class="teamskillbar-bar"></div>
+                        </div> <!- End Skill Bar
+
+                        <div class="teamskillbar clearfix m-top-50" data-percent="90%">
+                            <h6>HTML / CSS</h6>
+                            <div class="teamskillbar-bar"></div>
+                        </div> <!- End Skill Bar
+                    </div>
+                </div>
+            </div>
+        </div><!-End off row
+    </div>End off container
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="skill_bottom_content text-center">
+                <div class="col-md-3">
+                    <div class="skill_bottom_item">
+                        <h2 class="statistic-counter">3468</h2>
+                        <div class="separator_small"></div>
+                        <h5><em>Projects Finished</em></h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill_bottom_item">
+                        <h2 class="statistic-counter">4638</h2>
+                        <div class="separator_small"></div>
+                        <h5><em>Happy Clients</em></h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill_bottom_item">
+                        <h2 class="statistic-counter">3468</h2>
+                        <div class="separator_small"></div>
+                        <h5><em>Hours of work</em></h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill_bottom_item">
+                        <h2 class="statistic-counter">3468</h2>
+                        <div class="separator_small"></div>
+                        <h5><em>Cup of coffee</em></h5>
+                    </div>
+                </div>
+            </div>
+        </div>-End off row
+    </div>End off container
+</section> End off Skill section -->
+<!--Testimonial Section-->
+<!-- <section id="testimonial" class="testimonial fix">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="main_testimonial roomy-100">
+                <div class="head_title text-center">
+                    <h2 class="text-white">OUR TESTIMONIALS</h2>
+                </div>
+                <div class="testimonial_slid text-center">
+                    <div class="testimonial_item">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+                            <div class="test_authour m-top-30">
+                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_item">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+                            <div class="test_authour m-top-30">
+                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_item">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+                            <div class="test_authour m-top-30">
+                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_item">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+                            <div class="test_authour m-top-30">
+                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>End off row -->
+<!--</div>sEnd off container -->
+<!--</section> End off Testimonial section -->
+<!--Pricing Section-->
+<!-- <section id="pricing" class="pricing lightbg">
+    <div class="container">
+        <div class="row">
+            <div class="main_pricing roomy-100">
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <div class="head_title text-center">
+                        <h2>OUR PRICING</h2>
+                        <div class="separator_auto"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt tation ullamcorper
+                            suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="pricing_item">
+                        <div class="pricing_head p-top-30 p-bottom-100 text-center">
+                            <h3 class="text-uppercase">STARTER</h3>
+                        </div>
+                        <div class="pricing_price_border text-center">
+                            <div class="pricing_price">
+                                <h3 class="text-white">$19</h3>
+                                <p class="text-white">per month</p>
+                            </div>
+                        </div>
+
+                        <div class="pricing_body bg-white p-top-110 p-bottom-60">
+                            <ul>
+                                <li><i class="fa fa-check-circle text-primary"></i> <span>10</span> user</li>
+                                <li class="disabled"><i class="fa fa-times-circle"></i> Unlimited Bandwidth</li>
+                                <li class="disabled"><i class="fa fa-times-circle"></i> Full Statistics</li>
+
+                            </ul>
+                            <div class="pricing_btn text-center m-top-40">
+                                <a href="" class="btn btn-primary">CHOOSE PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-- End off col-md-4 -->
+<!-- <div class="col-md-4 col-sm-12">
+    <div class="pricing_item sm-m-top-30">
+        <div class="pricing_top_border"></div>
+        <div class="pricing_head p-top-30 p-bottom-100 text-center">
+            <h3 class="text-uppercase">PREMIUM</h3>
+        </div>
+        <div class="pricing_price_border text-center">
+            <div class="pricing_price">
+                <h3 class="text-white">$39</h3>
+                <p class="text-white">per month</p>
+            </div>
+        </div>
+
+        <div class="pricing_body bg-white p-top-110 p-bottom-60">
+            <ul>
+                <li><i class="fa fa-check-circle text-primary"></i> <span>50</span> user</li>
+                <li><i class="fa fa-check-circle text-primary"></i> Unlimited Bandwidth</li>
+                <li class="disabled"><i class="fa fa-times-circle"></i> Full Statistics</li>
+            </ul>
+            <div class="pricing_btn text-center m-top-40">
+                <a href="" class="btn btn-primary">CHOOSE PLAN</a>
+            </div>
+        </div>
+    </div>
+</div>End off col-md-4 -->
+<!-- <div class="col-md-4 col-sm-12">
+    <div class="pricing_item sm-m-top-30">
+        <div class="pricing_head p-top-30 p-bottom-100 text-center">
+            <h3 class="text-uppercase">bUSINESS</h3>
+        </div>
+        <div class="pricing_price_border text-center">
+            <div class="pricing_price">
+                <h3 class="text-white">$99</h3>
+                <p class="text-white">per month</p>
+            </div>
+        </div>
+
+        <div class="pricing_body bg-white p-top-110 p-bottom-60">
+            <ul>
+                <li><i class="fa fa-check-circle text-primary"></i> Unlimited Users</li>
+                <li><i class="fa fa-check-circle text-primary"></i> Unlimited Bandwidth</li>
+                <li><i class="fa fa-check-circle text-primary"></i> Full Statistics</li>
+            </ul>
+            <div class="pricing_btn text-center m-top-40">
+                <a href="" class="btn btn-primary">CHOOSE PLAN</a>
+            </div>
+        </div>
+    </div>
+</div>End off col-md-4 -->
+<!-- </div>
+        </div>End off row
+    </div>End off container
+</section> End off Pricing section -->
+<!--client brand section-->
+<!-- <section id="cbrand" class="cbrand">
+    <div class="container">
+        <div class="row">
+            <div class="main_cbrand text-center roomy-100">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img src="assets/images/clients/1.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img src="assets/images/clients/2.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img class="" src="assets/images/clients/5.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img src="assets/images/clients/4.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img src="assets/images/clients/3.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="cbrand_item m-bottom-10">
+                        <a href=""><img src="assets/images/clients/1.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>End off row
+    </div>End off container
+</section>End off Cbrand section -->
+<!--Subscribe section-->
+<!-- <section id="subscribe" class="subscribe roomy-100 fix">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="main_subscribe text-center">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="text-white">SUBSCRIBE US</h2>
+                    <p class="m-top-30 text-white">At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium</p>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="subscribe_btns m-top-40">
+
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="inputEmail2" placeholder="Email Address">
+                            </div>
+                            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-End off row
+    </div><!-End off container
+</section>End off Impress section -->
+<!--Blog Section-->
+<!-- <section id="blog" class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="main_blog text-center roomy-100">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="head_title text-center">
+                        <h2>RECENT BLOGS</h2>
+                        <div class="separator_auto"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt tation ullamcorper
+                            suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog_item m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/Blog/1.jpg" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                            <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog_item m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/Blog/2.jpg" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                            <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog_item m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/Blog/3.jpg" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                            <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-End off row ->
+    </div><!-End off container ->
+</section><!-End off Blog section -->
+<!--Maps Section-->
+<div class="main_maps text-center fix">
+    <div class="overlay"></div>
+    <div class="maps_text">
+        <h3 class="text-white" onclick="showmap()">ENCUENTRANOS EN EL MAPA <i class="fa fa-angle-down"></i></h3>
+        <div id="map_canvas" class="mapheight"></div>
+    </div>
+</div><!--End off Maps Section-->
+<!--Contact Us Section-->
+<section id="contact" class="contact bg-mega fix">
+    <div class="container">
+        <div class="row">
+            <div class="main_contact roomy-100 text-white">
+                <div class="col-md-4">
+                    <div class="rage_widget">
+                        <div class="widget_head">
+                            <h3 class="text-white">NUESTRA UBICACIÓN</h3>
+                            <div class="separator_small"></div>
+                        </div>
+                        <p>
+                            La dirección de la casa matriz es calle Isaac Tamayo #911. Visitanos y encuentra una gran variedad de productos con calidad.
+                        </p>
+
+                        <div class="widget_socail m-top-30">
+                            <ul class="list-inline">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 sm-m-top-30">
+                    <form class="" action="subcribe.php">
+                        <div class="row">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15350.865120641547!2d-97.08232143022461!3d15.871502300000008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe91598a523cf8eac!2sFerreland!5e0!3m2!1ses!2sbo!4v1670954807082!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div><!--End off row -->
+    </div><!--End off container -->
+</section><!--End off Contact Section-->
+<!-- scroll up-->
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div><!-- End off scroll up -->
+<footer id="footer" class="footer bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="main_footer text-center p-top-40 p-bottom-30">
+                <p class="wow fadeInRight" data-wow-duration="1s">
+                    Made with
+                    <i class="fa fa-heart"></i>
+                    by
+                    <a target="_blank" href="http://bootstrapthemes.co">WD</a>
+                    2023. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--<section class="content-section mt-2" id="about">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="featurette-heading fw-normal lh-1">NUESTROS <span class="text-primary">PRODUCTOS</span></h2>-->
+@*<p class="lead mb-5">
+        This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+        <a href="https://unsplash.com/">Unsplash</a>
+        !
+    </p>
+    <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>*@
+<!--</div>
+        </div>
+    </div>
+</section>
+<hr class="featurette-divider">-->
+<!-- Section-->
+<!--<section>
+    <div class=" container-fluid px-5 my-5">
+
+        <div class="row">
+
+            <div class="col-sm-3">
+
+
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white">
+                                Categorias
+                            </div>
+                            <div id="contenedor_categoria" class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white">
+                                Marcas
+                            </div>
+                            <div id="contenedor_marca" class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <div class="d-grid gap-2">
+                            <button id="btnaplicarfiltro" class="btn btn-outline-dark btn-block" type="button">
+                                <i class="fas fa-filter"></i>Aplicar Filtros
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-sm-9">
+
+                <nav aria-label="Page navigation example">
+                    <p class="text-black-50">
+                        Total Registros encontrados <span id="totalregistros">0</span>
+                    </p>
+
+                    <ul class="pagination justify-content-start">
+                        <li class="page-item disabled">
+                            <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
+                        </li>
+                        <li class="page-item active"><button class="page-link" href="#">1</button></li>
+                        <li class="page-item"><button class="page-link" href="#">2</button></li>
+                        <li class="page-item"><button class="page-link" href="#">3</button></li>
+                        <li class="page-item">
+                            <button class="page-link" href="#">Next</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div id="contenedor_producto" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">-->
+<!-- Product image-->
+<!--<img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />-->
+<!-- Product details-->
+<!--<div class="card-body p-4">
+    <div class="text-center">-->
+<!-- Product name-->
+<!--<h5 class="fw-bolder">Fancy Product</h5>-->
+<!-- Product price-->
+<!--$40.00 - $80.00
+    </div>
+</div>-->
+<!-- Product actions-->
+<!--<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+        </div>
+    </div>
+</div>
+<div class="col mb-5">
+    <div class="card h-100">-->
+<!-- Sale badge-->
+<!--<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>-->
+<!-- Product image-->
+<!--<img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />-->
+<!-- Product details-->
+<!--<div class="card-body p-4">
+    <div class="text-center">-->
+<!-- Product name-->
+<!--<h5 class="fw-bolder">Special Item</h5>-->
+<!-- Product reviews-->
+<!--<div class="d-flex justify-content-center small text-warning mb-2">
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+</div>-->
+<!-- Product price-->
+<!--<span class="text-muted text-decoration-line-through">$20.00</span>
+        $18.00
+    </div>
+</div>-->
+<!-- Product actions-->
+<!--<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+</main>
+
+
+@section scripts{
+
+    <script>
+
+
+        var _PaginaActual = 1;
+
+        $(document).ready(function () {
+
+            MostrarCategorias();
+            MostrarProductos(0, 0)
+        })
+
+
+
+        function MostrarCategorias() {
+
+
+            jQuery.ajax({
+                url:"aUrl.Action("ListaCategorias", "Tienda")",
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    $("#contenedor_categoria").LoadingOverlay("hide");
+
+                    $("<div>").addClass("form-check").append(
+
+                        $("<input>").addClass("form-check-input").attr({ "type": "radio", "name": "categoria", "value": "0", "id": "cx", "checked": "checked" }),
+                        $("<label>").addClass("form-check-label").text("Todos").attr({ "for": "cx"})
+                    ).appendTo("#contenedor_categoria")
+
+
+                    $.each(response.data, function (i, element) {
+
+                        $("<div>").addClass("form-check").append(
+                            $("<input>").addClass("form-check-input").attr({ "type": "radio", "name": "categoria", "value": element.IdCategoria, "id": "c" + i}),
+                            $("<label>").addClass("form-check-label").text(element.Descripcion).attr({ "for": "c" + i})
+                        ).appendTo("#contenedor_categoria")
+
+                    })
+
+                    MostrarMarca();
+
+                },
+                beforeSend: function () {
+                    $("#contenedor_categoria").LoadingOverlay("show");
+                }
+
+            })
+
+        }
+
+
+        function MostrarMarca() {
+
+            var _idcategoria = $("input[name=categoria]:checked").val()
+
+            jQuery.ajax({
+                url:"aUrl.Action("ListarMarcaporCategoria", "Tienda")",
+                type: "POST",
+                data: JSON.stringify({ idcategoria: _idcategoria}),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    $("#contenedor_marca").html("");
+                    $("#contenedor_marca").LoadingOverlay("hide");
+
+                    $("<div>").addClass("form-check").append(
+
+                        $("<input>").addClass("form-check-input").attr({ "type": "radio", "name": "marca", "value": "0", "id": "mx", "checked": "checked" }),
+                        $("<label>").addClass("form-check-label").text("Todos").attr({ "for": "mx"})
+                    ).appendTo("#contenedor_marca")
+
+
+                    $.each(response.data, function (i, element) {
+
+                        $("<div>").addClass("form-check").append(
+                            $("<input>").addClass("form-check-input").attr({ "type": "radio", "name": "marca", "value": element.IdMarca, "id": "m" + i}),
+                            $("<label>").addClass("form-check-label").text(element.Descripcion).attr({ "for": "m" + i})
+                        ).appendTo("#contenedor_marca")
+
+                    })
+
+                },
+                beforeSend: function () {
+                    $("#contenedor_marca").LoadingOverlay("show");
+                }
+
+            })
+
+        }
+
+        $(document).on("change", "input[name=categoria]", function () {
+            MostrarMarca();
+
+        })
+
+
+         function MostrarProductos(_idcategoria,_idmarca) {
+
+
+            jQuery.ajax({
+                url:"aUrl.Action("ListarProducto", "Tienda")",
+                type: "POST",
+                data: JSON.stringify({ idcategoria: _idcategoria, idmarca: _idmarca, nroPagina : _PaginaActual}),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    $("#contenedor_producto").html("");
+                    $("#contenedor_producto").LoadingOverlay("hide");
+
+                    $.each(response.data, function (i, element) {
+
+                        $("<div>").addClass("col mb-5").append(
+                            $("<div>").addClass("card h-100").append(
+                                $("<img>").addClass("card-img-top").attr({ "src": "data:image/" + element.Extension + ";base64," + element.Base64 }),
+                                /*$("<img>").addClass("card-img-top").attr({ "src": element.RutaImagen }),*/
+                                $("<div>").addClass("card-body p-4").append(
+                                    $("<div>").addClass("text-center").append(
+                                        $("<h5>").addClass("fw-bolder").text(element.Nombre),
+                                        "$ " + element.Precio.toFixed(2) + "USD"
+
+                                    )
+                                ),
+                                 $("<div>").addClass("card-footer p-2 pt-0 border-top-0 bg-transparent").append(
+
+
+                                     $("<div>").addClass("d-grid gap-2").append(
+
+                                         aif (Session["Cliente"] != null) {
+
+                                             a:$("<button>").addClass("btn btn-success mt-auto agregarcarrito").data("idproducto",element.IdProducto).text("Agregar a carrito"),
+
+                                         }
+
+                                         $("<a>").addClass("btn btn-dark mt-auto")
+                                             .attr({"href":"aUrl.Action("DetalleProducto","Tienda")" + "?idproducto=" + element.IdProducto})
+                                             .text("Ver detalle")
+
+                                     )
+
+
+
+                                 )
+
+                            )
+
+                        ).appendTo("#contenedor_producto")
+
+                    })
+
+
+
+                    //EMPIEZA LOGICA
+                    $("#totalregistros").text(response.totalRegistros);
+                    var desactivo_ant = _PaginaActual == 1 ? " disabled" : ""
+                    var desactivo_sig = response.totalPaginas == _PaginaActual ? " disabled" : ""
+                    var rango = [];
+
+
+                    if (_PaginaActual == 1)
+                        rango.push(_PaginaActual, _PaginaActual + 1, _PaginaActual + 2)
+                    else if (_PaginaActual == response.totalPaginas)
+                        rango.push(_PaginaActual - 2, _PaginaActual - 1, _PaginaActual)
+                    else
+                        rango.push(_PaginaActual - 1, _PaginaActual, _PaginaActual + 1)
+
+                    $(".pagination").html("");
+                    $(".pagination").append(
+                        $("<li>").addClass("page-item" + desactivo_ant).append(
+                            $("<button>").addClass("page-link previus").text("Anterior")
+                        )
+                    )
+
+
+                    for (nroPagina = 1; nroPagina <= response.totalPaginas; nroPagina++) {
+                        if (rango.includes(nroPagina)) {
+                            var clase = (nroPagina == _PaginaActual) ? " active" : "";
+                            $(".pagination").append(
+                                $("<li>").addClass("page-item" + clase).append(
+                                    $("<button>").addClass("page-link").text(nroPagina)
+                                )
+                            )
+                        }
+                    }
+
+                    $(".pagination").append(
+                        $("<li>").addClass("page-item" + desactivo_sig).append(
+                            $("<button>").addClass("page-link next").text("Siguiente")
+                        )
+                    )
+
+
+
+                },
+                beforeSend: function () {
+                    $("#contenedor_producto").LoadingOverlay("show");
+                }
+
+            })
+
+        }
+
+
+
+        $("#btnaplicarfiltro").click(function () {
+
+            _PaginaActual = 1
+            var _idcategoria = $("input[name=categoria]:checked").val()
+            var _idmarca = $("input[name=marca]:checked").val()
+            MostrarProductos(_idcategoria, _idmarca)
+
+        })
+
+
+
+        $(document).on("click", "button.page-link", function () {
+
+            if ($(this).hasClass("previus")) {
+                _PaginaActual = _PaginaActual - 1;
+            } else if ($(this).hasClass("next")) {
+                _PaginaActual = _PaginaActual + 1;
+            } else {
+                _PaginaActual = parseInt($(this).text())
+            }
+
+            var idcategoria = $('input[name=categoria]:checked').val();
+            var idmarca = $('input[name=marca]:checked').val();
+            MostrarProductos(idcategoria, idmarca)
+
+        })
+
+
+
+        $(document).on("click", "button.agregarcarrito", function () {
+
+            console.log($(this).data("idproducto"))
+
+            jQuery.ajax({
+                url: 'aUrl.Action("AgregarCarrito", "Tienda")',
+                type: "POST",
+                data: JSON.stringify({ idproducto: $(this).data("idproducto") }),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+
+                    if (data.respuesta) {
+
+                        MostrarCantidadCarrito();
+
+                        swal({
+                            title: "Agregado al carrito",
+                            text: "¿Desea ir al carrito?",
+                            type: "success",
+                            showCancelButton: true,
+                            confirmButtonClass: "btn-primary",
+                            confirmButtonText: "Si",
+                            cancelButtonText: "No",
+                            closeOnConfirm: true
+                        }, function () {
+
+                            window.location.href = 'aUrl.Action("Carrito","Tienda")'
+
+                        })
+                    } else {
+                        swal("", data.mensaje, "warning");
+                    }
+                }
+
+            });
+
+        })
+
+
+    </script>-->
+
+}
